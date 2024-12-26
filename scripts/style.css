@@ -1,0 +1,148 @@
+.grid-foto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Uno Dos Tres"
+        "Uno Dos Cuatro"
+        "Cinco Cinco Cinco";
+}
+
+.Uno {
+    grid-area: Uno;
+}
+
+.Dos {
+    grid-area: Dos;
+}
+
+.Tres {
+    grid-area: Tres;
+}
+
+.Cuatro {
+    grid-area: Cuatro;
+}
+
+.Cinco {
+    grid-area: Cinco;
+}
+
+/* BASE */
+
+section#header {
+    height: 70vh;
+    background-image: url(../img_galeria/bg_header_raices_mantagua_parcelas_2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section#header svg {width: auto;}
+
+section#Elegir {
+    background-color: #F5F5F5;
+    background-image: url(../img_galeria/bg_patter_logo.jpg);
+    background-size: cover;
+}
+
+section#Elegir h2,
+section#Elegir h3  {
+    color: #8D9257;
+}
+
+section#ventajas {
+    background-color: #8D9257;
+    background-image: url(../img_galeria/bg_patter_logo_2.jpg);
+    background-size: cover;
+}
+
+section#ventajas h2 {
+    color: #fff;
+    text-decoration-style: wavy;
+    text-decoration-line: underline;
+    text-underline-offset: 20px;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 4px;
+}
+
+section#ventajas h3 {
+    color: #8D9257;
+}
+
+section#urbanizadas {
+    background-color: #D5D1C9;
+}
+section#ubicacion {
+    background-color: #FAFAFA;
+}
+
+section#ubicacion h3 {
+    font-size: 1.3rem;
+}
+
+section#ubicacion a.btn {
+    background: #FAFAFA;
+    color: #8D9257;
+    border: 2px solid #8D9257;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+section#ubicacion a.btn i {
+    background-color: #F5F2CC;
+    padding: 12px;
+    border-radius: 10px 0 0 10px;
+}
+
+footer {
+    background-color: #1D1D1B;
+    color: #fff;
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+h1,h2,h3 {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-family: "Work Sans", serif;
+}
+
+/*EFECTOS*/
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    background-color: #25d366;
+    border-radius: 50%;
+    padding: 8px 15px 15px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-icon i {
+    font-size: 3rem; /* Adjust the size of the icon */
+    color: white; /* Icon color */
+}
