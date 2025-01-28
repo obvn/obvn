@@ -65,14 +65,14 @@ section#header svg {
     width: auto;
 }
 
-section#Elegir {
+section#Parcelas {
     background-color: #F5F5F5;
     background-image: url(../img_galeria/bg_patter_logo.jpg);
     background-size: cover;
 }
 
-section#Elegir h2,
-section#Elegir h3 {
+section#Parcelas h2,
+section#Parcelas h3 {
     color: #8D9257;
 }
 
@@ -181,15 +181,23 @@ p {
 @media (max-width: 768px) {
 
     h1 {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
       }
 
-    #Elegir .feature.col p
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    .wavy-underline {
+        text-decoration: none !important;
+    }
+
+    #Parcelas .feature.col p
     {
         display: none;
     }
 
-    #Elegir .feature.col svg
+    #Parcelas .feature.col svg
     {
         height: 60px;
     }
