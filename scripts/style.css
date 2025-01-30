@@ -65,14 +65,14 @@ section#header svg {
     width: auto;
 }
 
-section#Parcelas {
+section#Elegir {
     background-color: #F5F5F5;
     background-image: url(../img_galeria/bg_patter_logo.jpg);
     background-size: cover;
 }
 
-section#Parcelas h2,
-section#Parcelas h3 {
+section#Elegir h2,
+section#Elegir h3 {
     color: #8D9257;
 }
 
@@ -95,7 +95,7 @@ section#ventajas h3 {
     color: #8D9257;
 }
 
-section#urbanizadas {
+section#parcelas {
     background-color: #D5D1C9;
 }
 
@@ -192,12 +192,12 @@ p {
         text-decoration: none !important;
     }
 
-    #Parcelas .feature.col p
+    #Elegir .feature.col p
     {
         display: none;
     }
 
-    #Parcelas .feature.col svg
+    #Elegir .feature.col svg
     {
         height: 60px;
     }
