@@ -1,0 +1,141 @@
+:root {
+    --imav-main-color: #004899;
+    --imav-color-font: #337ACC;
+    --imav-secundario: #F9AA53;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container.fixed-top.navegacion {
+    background: var(--imav-main-color);
+    margin-top: 1%;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.container.fixed-top.navegacion a {
+    color: white;
+    text-decoration: none;
+}
+
+.container.fixed-top.navegacion img {
+    width: 125px;
+}
+
+.btn.btn-primary {
+    background: var(--imav-secundario);
+    border-color: var(--imav-secundario);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#header {
+    height: 75vh;
+    background: url(img/Banner_IMAV.png);
+    background-size: cover;
+    background-position: 50%;
+}
+
+#filosofia,
+#accion
+ {
+    background: url(img/pattern-1.png);
+    background-size: cover;
+}
+
+#metodologias {
+    background: url(img/pattern-2.png);
+    background-size: cover;
+}
+
+h1,h2,h3,h4,h5 {font-family: Montserrat;}
+
+p {
+    font-family: Arimo;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 900;
+    color: var(--imav-color-font);
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--imav-color-font);
+}
+
+small:not(#contact small) {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 150%;
+    letter-spacing: 6px;
+}
+
+#filosofia h3,
+#accion h3,
+#filosofia p,
+#accion p
+ {
+    color: white;
+}
+
+.bg-pattern small,
+.bg-pattern h2 {
+    color: white;
+}
+
+.contener-img-slider-1 {
+    height: 540px;
+    background: url(img/image_fx_2.jpg);
+    background-size: cover;
+}
+
+button.btn.btn-primary {
+    background: var(--imav-color-font);
+    border: 0;
+}
+
+footer {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: medium;
+}
+
+footer .col a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+footer .col.text-end a {
+    margin-left: 10%;
+}
+
+/* FIX slider  */
+
+.carousel-control-next, .carousel-control-prev {
+    top: auto;
+    bottom: 10%;
+    width: 10%;
+}
+
+.carousel-control-next span,
+.carousel-control-prev span {
+    background-color: var(--imav-main-color);
+    border-radius: 100%;
+    background-size: 50% 50%;
+}
+
+.carousel-control-prev {
+    right: 7%;
+    left: auto;
+}
