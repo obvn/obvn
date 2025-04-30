@@ -15,32 +15,52 @@
 <body>
     <main>
         <!-- NAV -->
-        <nav class="container fixed-top rounded navegacion p-1 text-center shadow">
-              <div class="row align-items-center">
-                <div class="col">
-                    <a href="#">
+          <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container rounded navegacion p-1 text-center shadow">
+                <a class="d-block d-md-none nav-link active" aria-current="page" href="#">
+                    <img src="img/Logo_IMAV.png" alt="">
+                </a>
+              
+              <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 flex-fill align-items-center">
+                  <li class="nav-item flex-fill d-none d-md-block">
+                    <a class="nav-link active" aria-current="page" href="#">
                         <img src="img/Logo_IMAV.png" alt="">
                     </a>
-                </div>
-                <div class="col"><a href="#filosofia">Nuestra Filosofía</a></div>
-                <div class="col"><a href="#metodologias">Cómo Trabajamos</a></div>
-                <div class="col"><a href="#accion">Ideas en Acción</a></div>
-                <div class="col"><a href="#contact">Contáctanos</a></div>
+                  </li>
+                  <li class="nav-item flex-fill">
+                    <a class="nav-link" href="#filosofia">Nuestra Filosofía</a>
+                  </li>
+                  <li class="nav-item flex-fill">
+                    <a class="nav-link" href="#metodologias">Cómo Trabajamos</a>
+                  </li>
+                  <li class="nav-item flex-fill">
+                    <a class="nav-link" href="#accion">Ideas en Acción</a>
+                  </li>
+                  <li class="nav-item flex-fill">
+                    <a class="nav-link" href="#contact">Contáctanos</a>
+                  </li>
+                </ul>
               </div>
+            </div>
           </nav>
+
         <div id="header" class="container-fluid"></div>
         <!-- CTA FRASE -->
         <div id="CTA" class="container py-5">
-            <div class="row py-5">
-                <div class="col">
+            <div class="row py-md-5">
+                <div class="col-12 col-md-7">
                     <h1>
                         Transformamos aprendizajes en soluciones efectivas
                     </h1>
                 </div>
-                <div class="col-5 d-flex align-items-center">
+                <div class="col-12 col-md-5 d-flex align-items-center">
                     <div>
                         <p>En IMAV Consultores cuidamos personas, medioambiente e inversion por medio del desarrolo de competencias para una alta fiabilidad en organizaciones (High fiability organization).</p>
-                        <a href="#contact" class="btn btn-primary px-5 py-3">Hablemos sobre tu empresa</a>
+                        <a href="#contact" class="btn btn-primary px-1 px-md-5 py-3">Hablemos sobre tu empresa</a>
                     </div>
                 </div>
             </div>
@@ -49,7 +69,7 @@
         <div id="filosofia" class="container-fluid bg-pattern">
             <div class="container py-5">
                 <div class="row py-5">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <small>Nuestra Filosofía</small>
                         <h2>De la experiencia a la seguridad organizacional</h2>
                         <p>En IMAV creemos que el aprendizaje continuo es clave para la fiabilidad organizacional. Nuestro enfoque se basa en desarrollar competencias estratégicas que permitan gestionar sistemas complejos de manera segura y eficiente.</p>
@@ -57,10 +77,10 @@
                         <p>Nos inspiran los aportes de expertos como Karl Weick, Ron Westrum y Charles Perrow, cuyos enfoques han moldeado nuestra metodología.</p>
                         <p>Nuestra meta es construir una cultura de aprendizaje adaptativo que impulse decisiones confiables y sostenibles.</p>
                     </div>
-                    <div class="col-5 ms-auto d-flex align-items-center">
+                    <div class="col-12 col-md-5 ms-auto d-flex img-fifo">
                         <div>
                             <div class="row">
-                                <div class="col d-flex justify-content-center align-items-center">
+                                <div class="col-2 d-flex justify-content-md-center align-items-md-center">
                                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M24.3401 60.8C23.9501 60.8 23.5601 60.66 23.2601 60.39L21.5601 58.87H20.5001L18.8001 60.39C18.3501 60.79 17.7201 60.91 17.1601 60.7L14.2901 59.66C13.7301 59.45 13.3201 58.96 13.2401 58.36L12.9101 56.11L12.1001 55.43L9.8301 55.5C9.2101 55.51 8.6701 55.21 8.3701 54.69L6.8401 52.05C6.5401 51.53 6.5501 50.89 6.8701 50.38L8.0701 48.44L7.8901 47.39L6.1001 45.98C5.6301 45.61 5.4001 45.01 5.5001 44.42L6.0301 41.42C6.1301 40.83 6.5501 40.34 7.1201 40.16L9.2801 39.45L9.8101 38.53L9.3501 36.3C9.2301 35.71 9.4401 35.11 9.9001 34.72L12.2401 32.76C12.7001 32.37 13.3301 32.27 13.8901 32.49L16.0001 33.33L17.0001 32.97L18.0801 30.97C18.3601 30.44 18.9201 30.11 19.5101 30.11H22.5601C23.1601 30.11 23.7101 30.44 23.9901 30.97L25.0701 32.97L26.0701 33.33L28.1801 32.49C28.7401 32.27 29.3701 32.37 29.8301 32.76L32.1701 34.72C32.6301 35.11 32.8401 35.71 32.7201 36.3L32.2601 38.53L32.7901 39.45L34.9501 40.16C35.5201 40.35 35.9401 40.83 36.0401 41.42L36.5701 44.42C36.6701 45.01 36.4501 45.61 35.9701 45.98L34.1801 47.39L34.0001 48.44L35.2001 50.38C35.5201 50.89 35.5301 51.53 35.2301 52.05L33.7001 54.69C33.4001 55.21 32.8301 55.53 32.2401 55.5L29.9701 55.43L29.1601 56.11L28.8301 58.36C28.7401 58.95 28.3401 59.45 27.7801 59.66L24.9101 60.7C24.7301 60.77 24.5401 60.8 24.3501 60.8H24.3401ZM19.8701 55.61H22.1701C22.5701 55.61 22.9601 55.76 23.2501 56.02L24.6901 57.3L25.7301 56.92L26.0101 55.02C26.0701 54.62 26.2701 54.26 26.5701 54.01L28.3401 52.53C28.6501 52.27 29.0401 52.14 29.4401 52.15L31.3601 52.21L31.9101 51.25L30.9001 49.62C30.6901 49.28 30.6101 48.87 30.6801 48.48L31.0801 46.21C31.1501 45.82 31.3601 45.46 31.6801 45.21L33.1901 44.02L33.0001 42.93L31.1701 42.33C30.7901 42.2 30.4701 41.94 30.2701 41.6L29.1201 39.6C28.9201 39.25 28.8501 38.85 28.9401 38.45L29.3301 36.57L28.4901 35.86L26.7001 36.57C26.3301 36.72 25.9201 36.72 25.5401 36.59L23.3701 35.8C22.9901 35.66 22.6801 35.39 22.4901 35.04L21.5801 33.35H20.4801L19.5701 35.04C19.3801 35.39 19.0701 35.66 18.6901 35.8L16.5201 36.59C16.1401 36.73 15.7301 36.72 15.3601 36.57L13.5701 35.86L12.7301 36.57L13.1201 38.45C13.2001 38.84 13.1401 39.25 12.9401 39.6L11.7901 41.6C11.5901 41.95 11.2701 42.21 10.8901 42.33L9.0601 42.93L8.8701 44.02L10.3801 45.21C10.6901 45.46 10.9101 45.81 10.9801 46.21L11.3801 48.48C11.4501 48.87 11.3801 49.28 11.1601 49.62L10.1501 51.25L10.7001 52.21L12.6201 52.15C13.0201 52.13 13.4101 52.27 13.7201 52.53L15.4901 54.01C15.8001 54.27 16.0001 54.63 16.0501 55.02L16.3301 56.92L17.3701 57.3L18.8101 56.02C19.1101 55.75 19.4901 55.61 19.8901 55.61H19.8701Z" fill="white"/>
                                         <path d="M46.2001 37.99C45.7401 37.99 45.28 37.82 44.92 37.5L42.92 35.72H41.67L39.67 37.5C39.14 37.97 38.4001 38.11 37.7401 37.87L34.37 36.64C33.71 36.4 33.2301 35.81 33.1301 35.12L32.7401 32.47L31.7801 31.67L29.1101 31.75C28.3801 31.77 27.74 31.4 27.39 30.79L25.6 27.68C25.25 27.07 25.26 26.31 25.63 25.71L27.0401 23.43L26.82 22.2L24.72 20.54C24.17 20.1 23.9 19.4 24.02 18.7L24.64 15.17C24.76 14.48 25.26 13.9 25.93 13.68L28.47 12.84L29.1 11.76L28.56 9.13998C28.42 8.44998 28.6601 7.73998 29.2001 7.27998L31.9501 4.96998C32.4901 4.51998 33.24 4.39998 33.89 4.65998L36.3801 5.64998L37.5601 5.21998L38.8301 2.85998C39.1601 2.23998 39.8101 1.84998 40.5201 1.84998H44.1101C44.82 1.84998 45.46 2.23998 45.8 2.85998L47.07 5.21998L48.25 5.64998L50.7401 4.65998C51.3901 4.39998 52.14 4.51998 52.68 4.96998L55.43 7.27998C55.9701 7.72998 56.2201 8.44998 56.07 9.13998L55.5201 11.76L56.1501 12.84L58.69 13.68C59.36 13.9 59.85 14.47 59.98 15.17L60.6 18.7C60.72 19.39 60.4501 20.1 59.9001 20.54L57.8 22.2L57.5801 23.43L58.9901 25.71C59.3601 26.31 59.37 27.06 59.0201 27.67L57.23 30.78C56.8801 31.39 56.24 31.76 55.51 31.74L52.84 31.66L51.8801 32.46L51.4901 35.11C51.3901 35.81 50.91 36.39 50.25 36.63L46.8801 37.86C46.6701 37.94 46.4501 37.98 46.2201 37.98L46.2001 37.99ZM40.9501 31.89H43.66C44.13 31.89 44.58 32.06 44.94 32.38L46.6301 33.89L47.85 33.45L48.18 31.21C48.25 30.74 48.48 30.32 48.84 30.02L50.92 28.28C51.28 27.98 51.73 27.82 52.21 27.83L54.4701 27.9L55.12 26.78L53.93 24.86C53.68 24.46 53.59 23.98 53.67 23.52L54.14 20.85C54.22 20.39 54.47 19.97 54.84 19.68L56.62 18.28L56.39 17L54.2401 16.29C53.7901 16.14 53.42 15.84 53.18 15.43L51.82 13.08C51.58 12.67 51.51 12.19 51.6 11.73L52.0601 9.51998L51.07 8.68998L48.9701 9.52998C48.5301 9.69998 48.0501 9.70998 47.6101 9.54998L45.0601 8.61998C44.6201 8.45998 44.25 8.13998 44.03 7.72998L42.96 5.73998H41.66L40.59 7.72998C40.3701 8.13998 40.0001 8.45998 39.5601 8.61998L37.01 9.54998C36.57 9.70998 36.0801 9.69998 35.6501 9.52998L33.55 8.68998L32.5601 9.51998L33.0201 11.73C33.1201 12.19 33.04 12.67 32.8 13.08L31.4401 15.43C31.2001 15.84 30.83 16.14 30.38 16.29L28.23 17L28 18.28L29.7801 19.68C30.1501 19.97 30.4 20.39 30.48 20.85L30.9501 23.52C31.0301 23.98 30.9501 24.46 30.6901 24.86L29.5 26.78L30.15 27.9L32.41 27.83C32.87 27.81 33.3401 27.97 33.7001 28.28L35.78 30.02C36.14 30.32 36.38 30.75 36.44 31.21L36.7701 33.45L37.9901 33.89L39.68 32.38C40.0301 32.07 40.48 31.89 40.96 31.89H40.9501Z" fill="white"/>
@@ -74,7 +94,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col d-flex justify-content-center align-items-center">
+                                <div class="col-2 d-flex justify-content-md-center align-items-md-center">
                                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M32 5.33337L8 16V32C8 45.3334 18.6667 56 32 58.6667C45.3333 56 56 45.3334 56 32V16L32 5.33337Z" stroke="white" stroke-width="5.33333" stroke-linejoin="round"/>
                                         <path d="M24 32L29.3333 37.3333L40 26.6666" stroke="white" stroke-width="5.33333" stroke-linecap="round" stroke-linejoin="round"/>
@@ -86,7 +106,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col d-flex justify-content-center align-items-center">
+                                <div class="col-2 d-flex justify-content-md-center align-items-md-center">
                                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20 26.67L25.33 32L32 25.33L38.67 32L44 26.67" stroke="white" stroke-width="5.33" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M41.33 48.52L46.86 46.06C52.42 43.59 56 38.08 56 32C56 18.67 56 5.32996 32 5.32996C8 5.32996 8 18.66 8 32C8 38.08 11.58 43.59 17.14 46.06L22.46 48.42" stroke="white" stroke-width="5.33" stroke-linejoin="round"/>
@@ -107,15 +127,15 @@
         <div id="metodologias" class="container-fluid">
             <div class="container py-5">
                 <div class="row py-5">
-                    <div class="col bg-white p-5 me-4">
+                    <div class="col bg-white p-5 me-md-4">
                         <small>Cómo Trabajamos</small>
                         <h2>Metodologías que convierten lesiones en acción</h2>
                         <p>Buscamos desarrollar procesos de conciencia que reducen los puntos ciegos creados por la inercia. </p>
                         <p>Usamos formas tradicionales de levantamiento de información con el fin de disponer de elementos de juicio y conocimientos de nuestros clientes. Entrevistas en profundidad, grupos focales, diseño de cuestionarios masivos, son algunas de las herramientas disponibles. Para desarrollar competencias usamos casos como trampolines, herramientas diagnosticas, juegos de toma de decisiones, modelos mentales e integración de sistemas.</p>
                         <p>No basta con acumular conocimiento; es clave convertirlo en estrategias aplicables. En IMAV Consultores utilizamos un enfoque basado en evidencia para fortalecer la toma de decisiones y desarrollar competencias de fiabilidad dentro de las organizaciones.</p>
-                        <a href="#contact" class="btn btn-primary px-5 py-3">Hablemos sobre tu empresa</a>
+                        <a href="#contact" class="btn btn-primary px-1 px-md-5 py-3">Hablemos sobre tu empresa</a>
                     </div>
-                    <div class="col bg-white p-0">
+                    <div class="col bg-white p-0 img-fifo">
                         <div id="carouselExample" class="carousel slide w-100 h-100">
                             <div class="carousel-inner">
                               <div class="carousel-item active">
@@ -126,10 +146,10 @@
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                <div class="contener-img-slider-1"></div>
+                                <div class="contener-img-slider-2"></div>
                                 <div class="px-4 py-3">
-                                    <h3>2Resolución de problemas e identificación de oportunidades</h3>
-                                    <p>2Soluciones personalizadas para tu desarrollo.</p>
+                                    <h3>Desarrollo de habilidades y competencias</h3>
+                                    <p>Capacitación y asesorías personalizadas.</p>
                                 </div>
                               </div>
                             </div>
@@ -152,10 +172,10 @@
         <div id="accion" class="container-fluid bg-pattern">
             <div class="container py-5">
                 <div class="row py-5">
-                    <div class="col">
-                        <img src="img/IMAV-Tacticas.png" alt="">
+                    <div class="col-12 col-md-6">
+                        <img class="img-fifo img-fluid mb-5 mb-md-1" src="img/IMAV-Tacticas.png" alt="">
                     </div>
-                    <div class="col d-flex align-items-center">
+                    <div class="col-12 col-md-6 d-flex align-items-center">
                         <div>
                             <small>Ideas en Acción</small>
                             <h2>Estrategias innovadoras que generan impacto real</h2>
@@ -169,7 +189,7 @@
         <!-- CONTACTO -->
         <div id="contact" class="container py-5">
             <div class="row py-5">
-                <div class="col-5">
+                <div class="col col-md-5">
                     <h2>Contáctanos para más información</h2>
                     <p>Estamos aquí para ayudarte a tomar decisiones informadas y mejorar tu aprendizaje.</p>
                     <form class="mb-4">
@@ -189,12 +209,12 @@
                             <label for="exampleFormControlTextarea1" class="d-none">Example textarea</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
                           </div>
-                        <button type="submit" class="btn btn-primary px-5 py-3">Agenda una conversación</button>
+                        <button type="submit" class="btn btn-primary px-1 px-md-5 py-3">Agenda una conversación</button>
                       </form>
                     <small>Nos pondremos en contacto contigo a la brevedad para conocer más sobre tus necesidades y cómo podemos ayudarte.</small>
                 </div>
-                <div class="col-6 d-flex align-items-center ms-auto">
-                    <img src="img/IMAV-Contacto.png" alt="">
+                <div class="d-none d-md-block col-md-6 d-flex align-items-center ms-auto">
+                    <img class="img-fifo" src="img/IMAV-Contacto.png" alt="">
                 </div>
             </div>
         </div>
@@ -206,32 +226,34 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-md-2">
                     <a href="#filosofia">
                         <p>Nuestra Filosofía</p>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-2">
                     <a href="#metodologias">
                         <p>Cómo Trabajamos</p>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-2">
                     <a href="#accion">
                         <p>Ideas en Acción</p>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-2">
                     <a href="#contact">
                         <p>Contáctanos</p>
                     </a>
                 </div>
-                <div class="col text-end">
-                    <a href="#" target="_blank">
+                <div class="col-12 col-md-4 col text-end">
+                    <a href="https://x.com/Consultore55373" target="_blank">
                         <i class="bi bi-twitter-x"></i>
                     </a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                    <a href=""><i class="bi bi-envelope-arrow-up-fill"></i></a>
+                    <a href="https://www.linkedin.com/company/imav-consultores/about/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="mailto:email@example.com"><i class="bi bi-envelope-arrow-up-fill"></i></a>
+
+
                 </div>
             </div>
             <hr>
@@ -239,5 +261,48 @@
         </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script>
+let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', function() {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  const triggerPoint = window.innerHeight * 0.8; // 80% of viewport height
+
+  if (currentScroll < triggerPoint) {
+    // Always show the navbar within the first 80vh
+    navbar.classList.remove('hide');
+    return;
+  }
+
+  if (currentScroll > lastScrollTop) {
+    // Scrolling down past 80vh
+    navbar.classList.add('hide');
+  } else {
+    // Scrolling up past 80vh
+    navbar.classList.remove('hide');
+  }
+  
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+}, false);
+
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+  
+      // Close the navbar when a link is clicked
+      document.querySelectorAll('.navbar-collapse .nav-link').forEach(function (link) {
+        link.addEventListener('click', function () {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false
+          });
+          bsCollapse.hide();
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>

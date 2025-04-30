@@ -6,23 +6,7 @@
 
 html {
     scroll-behavior: smooth;
-}
-
-.container.fixed-top.navegacion {
-    background: var(--imav-main-color);
-    margin-top: 1%;
-    color: white;
-    font-family: Montserrat;
-    font-weight: 500;
-}
-
-.container.fixed-top.navegacion a {
-    color: white;
-    text-decoration: none;
-}
-
-.container.fixed-top.navegacion img {
-    width: 125px;
+    font-size: 16px; /* 1rem = 16px */
 }
 
 .btn.btn-primary {
@@ -52,21 +36,25 @@ html {
     background-size: cover;
 }
 
-h1,h2,h3,h4,h5 {font-family: Montserrat;}
+h1,h2,h3,h4,h5 {
+    font-family: Montserrat;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
 
 p {
     font-family: Arimo;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 900;
     color: var(--imav-color-font);
 }
 
 h2 {
-    font-size: 46px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--imav-color-font);
 }
@@ -99,6 +87,12 @@ small:not(#contact small) {
     background-size: cover;
 }
 
+.contener-img-slider-2 {
+    height: 540px;
+    background: url(img/Desarrollo-de-habilidades-competencias.jpg);
+    background-size: cover;
+}
+
 button.btn.btn-primary {
     background: var(--imav-color-font);
     border: 0;
@@ -110,13 +104,13 @@ footer {
     font-weight: medium;
 }
 
-footer .col a {
+footer a {
     font-size: 20px;
     text-decoration: none;
     color: #000;
 }
 
-footer .col.text-end a {
+footer .text-end a {
     margin-left: 10%;
 }
 
@@ -139,3 +133,80 @@ footer .col.text-end a {
     right: 7%;
     left: auto;
 }
+
+/*NAVBAR ANIMATION*/
+
+#navbar .container {
+    background: var(--imav-main-color);
+    top: 1%;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar img {
+    width: 125px;
+}
+
+#navbar {
+    transition: top 0.3s, opacity 0.3s; /* <- Added opacity transition */
+    opacity: 1; /* Fully visible */
+  }
+  
+  #navbar.hide {
+    top: -9%; /* Move it out of view */
+    opacity: 0; /* Fade out */
+  }
+  
+  #navbar:hover {
+    top: 1%; /* Show on hover */
+    opacity: 1; /* Fully visible on hover */
+  }
+  
+  /*ANIMATION IMG*/
+
+  .img-fifo {
+    scale: .8;
+    opacity: 0;
+    animation: imgfade linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
+  }
+
+  @keyframes imgfade {
+    to {scale: 1; opacity: 1;}
+  }
+
+  /*RESPONSIVE*/
+
+  @media (max-width: 575.98px) {
+
+    #navbar {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #header {
+        height: 40vh;
+        background: url(img/Banner_IMAV.png);
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .btn.btn-primary {
+        width: 100%;
+    }
+
+  }
