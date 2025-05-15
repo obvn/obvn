@@ -1,3 +1,11 @@
+/* 
+Light 300
+Regular 400
+Medium 500
+SemiBold 600
+Bold 700
+*/
+
 * {
     font-family: Montserrat;
 }
@@ -71,16 +79,17 @@ p {
 
 #myCarousel .carousel-item:nth-child(2) {
     background: url(img/MAV&GROWTH_Slider_2.jpg);
+    background-size: cover;
 }
 
 #myCarousel .carousel-item:last-child {
     background: url(img/MAV&GROWTH_Slider_3.jpg);
+    background-size: cover;
 }
 
 #nosotros p {
     font-size: 24px;
 }
-
 
 #nosotros h4 {
     font-size: 18px;
@@ -288,7 +297,7 @@ footer a {
     grid-auto-flow: row;
     grid-template-areas:
         "PersonalMedico Administrativos LogisticaOp"
-        "Cajeras SoporteTI LogisticaOp";
+        "Cajeras SoporteTI ProyectosEspeciales";
 }
 
 .grid-atributos .gi-1 {grid-area: PersonalMedico;}
@@ -296,9 +305,11 @@ footer a {
 .grid-atributos .gi-3 {grid-area: Cajeras;}
 .grid-atributos .gi-4 {grid-area: SoporteTI;}
 .grid-atributos .gi-5 {grid-area: LogisticaOp;}
+.grid-atributos .gi-6 {grid-area: ProyectosEspeciales;}
 
 .grid-atributos .gi-2,
-.grid-atributos .gi-3 {background-color: var(--mav-growth-main-color);}
+.grid-atributos .gi-3,
+.grid-atributos .gi-6 {background-color: var(--mav-growth-main-color);}
 
 .grid-atributos .gi-1,
 .grid-atributos .gi-4,
