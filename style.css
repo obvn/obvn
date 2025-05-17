@@ -1,11 +1,3 @@
-/* 
-Light 300
-Regular 400
-Medium 500
-SemiBold 600
-Bold 700
-*/
-
 * {
     font-family: Montserrat;
 }
@@ -325,3 +317,29 @@ footer a {
 #agentesAI .tres-items div {background: var(--mav-growth-main-color);}
 #agentesAI .tres-items div:nth-child(2) {background: #80c7b0;}
 #agentesAI .tres-items div:last-child {background: var(--mav-growth-second-color);}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .grid-atributos {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "PersonalMedico"
+      "Administrativos"
+      "LogisticaOp"
+      "Cajeras"
+      "SoporteTI"
+      "ProyectosEspeciales";
+  }
+
+#myCarousel .carousel-item,
+#myCarousel .carousel-item:nth-child(2),
+#myCarousel .carousel-item:last-child {
+  background-position-x: 100%;
+}
+
+h2 {font-size: 2.5rem;}
+
+}
+
