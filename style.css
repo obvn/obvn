@@ -52,6 +52,33 @@ h1 {
     color: #000080;
 }
 
-#myCarousel .carousel-inner .carousel-item{
-    min-height: 50vh;
+.card {
+  display: block;
 }
+
+#Especialidades > div {
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+.d-flex.d-md-none.navbar.py-4 a {
+    color: #000080;
+    font-size: 1.4rem;
+}
+
+.d-flex.d-md-none.navbar.py-4 button {
+    font-size: 1.4rem;
+}
+
+
+@media (max-width: 768px) {
+    #myCarousel .carousel-inner .carousel-item{height: 45vh;}
+    #myCarousel > div > div > div > div > p:nth-child(3) > a {width: 100%;}
+    #Especialidades > div {font-size: 1.2rem; line-height: 100%;}
+}
+
+
+@media (min-width: 769px) {
+body > main > footer > div > div > div.col-12.col-md-1.text-center img {
+    width: 100% !important;
+}}

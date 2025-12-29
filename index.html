@@ -22,8 +22,7 @@
     <main>
         <nav>
             <div class="container">
-                <header
-                    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+                <header class="d-none d-md-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
                     <div class="col-12 col-md-3 p-3">
                         <img class="w-100 p-4" src="img/Logo_Salud_Mental_Integral.svg" alt="">
                     </div>
@@ -55,6 +54,32 @@
                 </header>
             </div>
         </nav>
+<!-- menu responsive -->
+<nav class="d-flex d-md-none navbar py-4" aria-label="Dark offcanvas navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand w-50" href="#"><img src="img/Logo_Salud_Mental_Integral.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-5">
+                    <li class="nav-item"> <a class="nav-link" aria-current="page" href="#">Especialidades</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Motivos de Consulta</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Terapia DBT</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Profesionales</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Convenios y Aranceles</a> </li>
+                </ul>
+                
+                <a class="d-block mb-4" href="#"><img class="me-2" width="50px" src="img/footer-wtsap.png" alt="">+56 9 7429 5552</a>
+                <button type="button" class="btn btn-outline-primary btn-principal w-100 p-4 mb-4"><img class="me-2" width="20px" src="img/Ico_Cal.svg" alt="">Reservar Hora</button>
+                <p>Av. Nva. Einstein 290 of. 1007, Rancagua.</p>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- menu responsive fin -->
         <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -83,25 +108,25 @@
         <div id="bajoAcordion" class="container-fluid">
             <div class="container ">
                 <div class="row py-5 justify-content-around">
-                    <div class="col-12 col-md-2 p-4 mb-3 bg-white border text-center rounded-5 d-flex flex-column">
+                    <div class="col-5 col-md-2 p-4 mb-3 bg-white border text-center rounded-5 d-flex flex-column">
                         <div class="img-wrapper flex-grow-1 d-flex justify-content-center align-items-center h-50">
                             <img class="img-fluid" src="img/Fonasa.png" alt="Fonasa">
                         </div>
                         <h3 class="mt-auto">Atención FONASA</h3>
                     </div>
-                    <div class="col-12 col-md-2 p-4 mb-3 bg-white border text-center rounded-5 d-flex flex-column">
+                    <div class="col-5 col-md-2 p-4 mb-3 bg-white border text-center rounded-5 d-flex flex-column">
                         <div class="img-wrapper flex-grow-1 d-flex justify-content-center align-items-center h-50">
                             <img class="w-100" src="img/GES.png" alt="GES">
                         </div>
                         <h3>Convenio GES</h3>
                     </div>
-                    <div class="col-12 col-md-2 p-4 mb-3 bg-white border text-center rounded-5 d-flex flex-column">
+                    <div class="col-5 col-md-2 p-4 mb-3 bg-white border text-center rounded-5 d-flex flex-column">
                         <div class="img-wrapper flex-grow-1 d-flex justify-content-center align-items-center h-50">
                             <img class="w-100" src="img/MasVida.png" alt="Isapre Mas Vida">
                         </div>
                         <h3>Isapre Nueva Más Vida</h3>
                     </div>
-                    <div class="col-12 col-md-2 p-4 mb-3 bg-white border text-center rounded-5 d-flex flex-column">
+                    <div class="col-5 col-md-2 p-4 mb-3 bg-white border text-center rounded-5 d-flex flex-column">
                         <div class="img-wrapper flex-grow-1 d-flex justify-content-center align-items-center h-50">
                             <img class="w-100" src="img/podcast.png" alt="Podcast">
                         </div>
@@ -113,40 +138,40 @@
         <div id="Especialidades" class="container-fluid py-5">
             <div class="container">
                 <h3>Especialidades</h3>
-                <div class="row justify-content-around py-4">
+                <div class="row justify-content-around py-md-4">
                     <div
-                        class="col-12 col-md-2 p-4 mb-3 deeplavander justify-content-center text-center rounded-3 d-flex align-items-center">
+                        class="col-5 col-md-2 p-4 mb-3 deeplavander justify-content-center text-center rounded-3 d-flex align-items-center">
                         Médico Salud Mental Integral</div>
                     <div
-                        class="col-12 col-md-2 p-4 mb-3 fireBush justify-content-center text-center rounded-3 d-flex align-items-center">
+                        class="col-5 col-md-2 p-4 mb-3 fireBush justify-content-center text-center rounded-3 d-flex align-items-center">
                         Psicología Adultos</div>
                     <div
-                        class="col-12 col-md-2 p-4 mb-3 sandstorm justify-content-center text-center rounded-3 d-flex align-items-center">
+                        class="col-5 col-md-2 p-4 mb-3 sandstorm justify-content-center text-center rounded-3 d-flex align-items-center">
                         Psicología Infanto-Juvenil</div>
                     <div
-                        class="col-12 col-md-2 p-4 mb-3 mantis justify-content-center text-center rounded-3 d-flex align-items-center">
+                        class="col-5 col-md-2 p-4 mb-3 mantis justify-content-center text-center rounded-3 d-flex align-items-center">
                         Medicina Integral</div>
                 </div>
-                <div class="row justify-content-around py-4">
+                <div class="row justify-content-around py-md-4">
                     <div
-                        class="col-12 col-md-2 p-4 mb-3 DenimBlue justify-content-center text-center rounded-3 d-flex align-items-center">
+                        class="col-5 col-md-2 p-4 mb-3 DenimBlue justify-content-center text-center rounded-3 d-flex align-items-center">
                         PsicoOncología</div>
                     <div
-                        class="col-12 col-md-2 p-4 mb-3 deeplavander justify-content-center text-center rounded-3 d-flex align-items-center">
+                        class="col-5 col-md-2 p-4 mb-3 deeplavander justify-content-center text-center rounded-3 d-flex align-items-center">
                         Nutrición Integral</div>
                     <div
-                        class="col-12 col-md-2 p-4 mb-3 fireBush justify-content-center text-center rounded-3 d-flex align-items-center">
+                        class="col-5 col-md-2 p-4 mb-3 fireBush justify-content-center text-center rounded-3 d-flex align-items-center">
                         Test Psicológicos</div>
                     <div
-                        class="col-12 col-md-2 p-4 mb-3 sandstorm justify-content-center text-center rounded-3 d-flex align-items-center">
+                        class="col-5 col-md-2 p-4 mb-3 sandstorm justify-content-center text-center rounded-3 d-flex align-items-center">
                         Psicodiagnóstico</div>
                 </div>
-                <div class="row justify-content-around py-4">
+                <div class="row justify-content-around py-md-4">
                     <div
-                        class="col-12 col-md-2 p-4 mb-3 mantis justify-content-center text-center rounded-3 d-flex align-items-center">
+                        class="col-5 col-md-2 p-4 mb-3 mantis justify-content-center text-center rounded-3 d-flex align-items-center">
                         Terapia DBT</div>
                     <div
-                        class="col-12 col-md-2 p-4 mb-3 DenimBlue justify-content-center text-center rounded-3 d-flex align-items-center">
+                        class="col-5 col-md-2 p-4 mb-3 DenimBlue justify-content-center text-center rounded-3 d-flex align-items-center">
                         Talleres Grupales</div>
                     <div class="col-5"></div>
                 </div>
@@ -155,8 +180,8 @@
         <footer class="container-fluid py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-1">
-                        <img class="w-100" src="img/Logo_Salud_Mental_Integral_footer.svg" alt="">
+                    <div class="col-12 col-md-1 text-center">
+                        <img class="w-50" src="img/Logo_Salud_Mental_Integral_footer.svg" alt="">
                     </div>
                     <div class="col-12 col-md-3 offset-md-6 py-3">
                         <div class="row">
