@@ -1,7 +1,7 @@
 // <weight>: Use a value from 200 to 900
 // <uniquifier>: Use a unique and descriptive class name
 
-.reddit-sans-<uniquifier> {
+.reddit-sans-<uniquifier {
   font-family: "Reddit Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -10,6 +10,15 @@
 
 * {
     font-family: "Reddit Sans", sans-serif;
+    color: #000080;
+}
+
+a,
+a:active {
+    text-decoration: none;
+}
+
+nav a:visited {
     color: #000080;
 }
 
@@ -23,12 +32,15 @@
 
 #Especialidades {
     background-color: #dbe8f3;
+    font-weight: 600;
 }
 
 #Especialidades .row .col-2 {
     font-size: 20px;
     min-height: 110px;
 }
+
+
 
 .deeplavander {background-color:#8b5ea8;}
 .fireBush {background-color: #e1a133;}
@@ -39,7 +51,7 @@
 .btn-principal {
     background-color: #000080;
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h1 {
@@ -66,10 +78,18 @@ h1 {
     font-size: 1.4rem;
 }
 
-.d-flex.d-md-none.navbar.py-4 button {
+.d-flex.d-md-none.navbar.py-4 button,
+.d-flex.d-md-none.navbar.py-4 p {
     font-size: 1.4rem;
 }
 
+.nav.w-100.col-12 a {
+    color: #000080 !important;
+}
+
+.border-bottom.border-4 {
+    border-color: #000080 !important;
+}
 
 @media (max-width: 768px) {
     #myCarousel .carousel-inner .carousel-item{height: 45vh;}
